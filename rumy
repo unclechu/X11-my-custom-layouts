@@ -1,0 +1,15 @@
+partial alphanumeric_keys
+xkb_symbols "basic" {
+    include "ru(common)"
+    name[Group1]= "US - My custom";
+    key <AE01> { [ exclam,     1 ] };
+    key <AE02> { [ quotedbl,   2 ] };
+    key <AE03> { [ numerosign, 3 ] };
+    key <AE04> { [ semicolon,  4 ] };
+    key <AE05> { [ percent,    5 ] };
+    key <AE06> { [ colon,      6 ] };
+    key <AE07> { [ question,   7 ] };
+    key <AE08> { [ asterisk,   8 ] };
+    key <AE09> { [ parenleft,  9 ] };
+    key <AE10> { [ parenright, 0 ] };
+};
