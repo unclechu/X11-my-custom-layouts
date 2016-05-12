@@ -1,7 +1,21 @@
 partial alphanumeric_keys
 xkb_symbols "basic" {
+    
     include "us(basic)"
     name[Group1]= "US - My custom";
+    
+    replace key <CAPS> { [ Control_L, Control_L ] };
+    
+    # switch layout by both shifts
+    key <LFSH> { [ Shift_L, ISO_Prev_Group ] };
+    key <RTSH> { [ Shift_R, ISO_Next_Group ] };
+    
+    // apple keyboard key near left shift
+    key <LSGT> { [ Escape, Escape ] };
+    
+    // eject key
+    key <I169> { [ Caps_Lock ] };
+    
     key <AE01> { [ exclam,      1 ] };
     key <AE02> { [ at,          2 ] };
     key <AE03> { [ numbersign,  3 ] };
@@ -13,3 +27,5 @@ xkb_symbols "basic" {
     key <AE09> { [ parenleft,   9 ] };
     key <AE10> { [ parenright,  0 ] };
 };
+
+// vim: set et ts=4 sts=4 sw=4 :
