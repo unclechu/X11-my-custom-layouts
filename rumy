@@ -5,6 +5,7 @@ xkb_symbols "basic" {
     name[Group1]= "RU - My custom";
     
     replace key <CAPS> { [ Control_L, Control_L ] };
+    modifier_map Control { <CAPS>, <LCTL> };
     
     # switch layout by both shifts
     key <LFSH> { [ Shift_L, ISO_Prev_Group ] };
