@@ -39,10 +39,25 @@ xkb_symbols "ru" {
     key <AE10> { [ parenright, 0 ] };
 };
 
+// almost as original system layout
+default partial alphanumeric_keys
+xkb_symbols "origus" {
+    include "us(basic)"
+    name[Group1]= "US - Original";
+    include "mine(somestuff)"
+};
+
+// almost as original system layout
+partial alphanumeric_keys
+xkb_symbols "origru" {
+    include "ru(winkeys)"
+    name[Group1]= "RU - Original";
+    include "mine(somestuff)"
+};
+
+// non lang-specific keys
 partial alphanumeric_keys
 xkb_symbols "somestuff" {
-    
-    // non lang-specific keys
     
     replace key <CAPS> { [ Control_L, Control_L ] };
     modifier_map Control { <CAPS>, <LCTL> };
