@@ -1,4 +1,5 @@
-partial alphanumeric_keys
+
+default partial alphanumeric_keys
 xkb_symbols "basic" {
     
     include "ru(winkeys)"
@@ -28,5 +29,6 @@ xkb_symbols "basic" {
     key <AE09> { [ parenleft,  9 ] };
     key <AE10> { [ parenright, 0 ] };
 };
+
 
 // vim: set et ts=4 sts=4 sw=4 :
