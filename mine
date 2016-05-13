@@ -40,7 +40,7 @@ xkb_symbols "ru" {
 };
 
 // almost as original system layout
-default partial alphanumeric_keys
+partial alphanumeric_keys
 xkb_symbols "origus" {
     include "us(basic)"
     name[Group1]= "US - Original";
@@ -55,8 +55,19 @@ xkb_symbols "origru" {
     include "mine(somestuff)"
 };
 
+// TODO FIXME for us layout
+//partial xkb_keycodes {
+//    <FK13> = 191;
+//    <FK14> = 192;
+//    <FK15> = 193;
+//    <FK16> = 194;
+//    <FK17> = 195;
+//    <FK18> = 196;
+//    <FK19> = 197;
+//};
+
 // non lang-specific keys
-partial alphanumeric_keys
+hidden partial alphanumeric_keys
 xkb_symbols "somestuff" {
     
     replace key <CAPS> { [ Control_L, Control_L ] };
@@ -71,6 +82,8 @@ xkb_symbols "somestuff" {
     
     // eject key
     key <I169> { [ Caps_Lock ] };
+    
+    key <FK13> { [ Menu ] };
 };
 
 // vim: set et ts=4 sts=4 sw=4 :
