@@ -83,6 +83,8 @@ xkb_symbols "somestuff" {
     // eject key
     key <I169> { [ Caps_Lock ] };
     
+    key <SCLK> { [ Caps_Lock ] };
+    
     key <FK13> { [ Menu ] };
 };
 
