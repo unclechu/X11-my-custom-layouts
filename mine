@@ -85,7 +85,7 @@ xkb_symbols "somestuff" {
     
     key <SCLK> { [ Caps_Lock, Caps_Lock ] };
     
-    key <FK13> { [ Menu ] };
+    key <FK13> { [ Menu, Menu ] };
 };
 
 // vim: set et ts=4 sts=4 sw=4 :
