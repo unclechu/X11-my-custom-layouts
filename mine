@@ -81,9 +81,9 @@ xkb_symbols "somestuff" {
     key <LSGT> { [ Escape, Escape ] };
     
     // eject key
-    key <I169> { [ Caps_Lock ] };
+    key <I169> { [ Caps_Lock, Caps_Lock ] };
     
-    key <SCLK> { [ Caps_Lock ] };
+    key <SCLK> { [ Caps_Lock, Caps_Lock ] };
     
     key <FK13> { [ Menu ] };
 };
