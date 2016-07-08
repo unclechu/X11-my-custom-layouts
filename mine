@@ -17,6 +17,8 @@ xkb_symbols "us" {
     key <AE08> { [ asterisk,    8 ] };
     key <AE09> { [ parenleft,   9 ] };
     key <AE10> { [ parenright,  0 ] };
+    
+    include "mine(hackus)"
 };
 
 partial alphanumeric_keys
@@ -37,6 +39,8 @@ xkb_symbols "ru" {
     key <AE08> { [ asterisk,   8 ] };
     key <AE09> { [ parenleft,  9 ] };
     key <AE10> { [ parenright, 0 ] };
+    
+    include "mine(hackru)"
 };
 
 // almost as original system layout
@@ -45,6 +49,7 @@ xkb_symbols "origus" {
     include "us(basic)"
     name[Group1]= "US - Original";
     include "mine(somestuff)"
+    include "mine(hackus)"
 };
 
 // almost as original system layout
@@ -53,6 +58,58 @@ xkb_symbols "origru" {
     include "ru(winkeys)"
     name[Group1]= "RU - Original";
     include "mine(somestuff)"
+    include "mine(hackru)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "hackus" {
+    
+    key.type[group1]="THREE_LEVEL";
+    
+    // arrow keys (like vim)
+    key <AC06> { [ h, H, Left ] };
+    key <AC07> { [ j, J, Down ] };
+    key <AC08> { [ k, K, Up ] };
+    key <AC09> { [ l, L, Right ] };
+    
+    // page up and page down (like vim)
+    key <AD07> { [ u, U, Prior ] };
+    key <AC03> { [ d, D, Next ] };
+    
+    // home and end (like emacs)
+    key <AC01> { [ a, A, Home ] };
+    key <AD03> { [ e, E, End ] };
+    
+    // insert
+    key <AD08> { [ i, I, Insert ] };
+    
+    // contextual menu
+    key <AB07> { [ m, M, Menu ] };
+};
+
+partial alphanumeric_keys
+xkb_symbols "hackru" {
+    key.type[group1]="THREE_LEVEL";
+    
+    // arrow keys (like vim)
+    key <AC06> { [ Cyrillic_er, Cyrillic_ER, Left ] };
+    key <AC07> { [ Cyrillic_o,  Cyrillic_O,  Down ] };
+    key <AC08> { [ Cyrillic_el, Cyrillic_EL, Up ] };
+    key <AC09> { [ Cyrillic_de, Cyrillic_DE, Right ] };
+    
+    // page up and page down (like vim)
+    key <AD07> { [ Cyrillic_ghe, Cyrillic_GHE, Prior ] };
+    key <AC03> { [ Cyrillic_ve,  Cyrillic_VE,  Next ] };
+    
+    // home and end (like emacs)
+    key <AC01> { [ Cyrillic_ef, Cyrillic_EF, Home ] };
+    key <AD03> { [ Cyrillic_u,  Cyrillic_U,  End ] };
+    
+    // insert
+    key <AD08> { [ Cyrillic_sha, Cyrillic_SHA, Insert ] };
+    
+    // contextual menu
+    key <AB07> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN, Menu ] };
 };
 
 // non lang-specific keys
@@ -68,6 +125,13 @@ xkb_symbols "somestuff" {
     
     // apple keyboard key near left shift
     key <LSGT> { [ Shift_L, ISO_Prev_Group ] };
+    
+    // for hacking
+    key <LVL3> {
+        type[Group1]="ONE_LEVEL",
+        symbols[Group1] = [ ISO_Level3_Shift ]
+    };
+    modifier_map Mod5 { ISO_Level3_Shift };
 };
 
 // vim: set et ts=4 sts=4 sw=4 :
