@@ -86,7 +86,7 @@ xkb_symbols "hackus" {
     // contextual menu
     key <AB07> { [ m, M, Menu ] };
     
-    replace key <CAPS> { [ Control_L, Control_L, Escape ] };
+    replace key <TAB> { [ Tab, ISO_Left_Tab, Escape ] };
 };
 
 partial alphanumeric_keys
@@ -113,7 +113,7 @@ xkb_symbols "hackru" {
     // contextual menu
     key <AB07> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN, Menu ] };
     
-    replace key <CAPS> { [ Control_L, Control_L, Escape ] };
+    replace key <TAB> { [ Tab, ISO_Left_Tab, Escape ] };
 };
 
 // non lang-specific keys
