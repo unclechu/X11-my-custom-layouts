@@ -86,6 +86,8 @@ xkb_symbols "hackus" {
     // contextual menu
     key <AB07> { [ m, M, Menu ] };
     
+    key <AB02> { [ x, X, Delete ] };
+    
     replace key <TAB> { [ Tab, ISO_Left_Tab, Escape ] };
 };
 
@@ -112,6 +114,8 @@ xkb_symbols "hackru" {
     
     // contextual menu
     key <AB07> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN, Menu ] };
+    
+    key <AB02> { [ Cyrillic_che, Cyrillic_CHE, Delete ] };
     
     replace key <TAB> { [ Tab, ISO_Left_Tab, Escape ] };
 };
