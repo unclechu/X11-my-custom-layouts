@@ -89,8 +89,6 @@ xkb_symbols "hackus" {
     
     // contextual menu
     key <AB07> { [ m, M, Menu ] };
-    
-    replace key <TLDE> { [ grave, asciitilde, Escape ] };
 };
 
 partial alphanumeric_keys
@@ -120,8 +118,6 @@ xkb_symbols "hackru" {
     
     // contextual menu
     key <AB07> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN, Menu ] };
-    
-    replace key <TLDE> { [ Cyrillic_io, Cyrillic_IO, Escape ] };
 };
 
 // non lang-specific keys
