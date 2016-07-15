@@ -76,9 +76,13 @@ xkb_symbols "hackus" {
     key <AD07> { [ u, U, Prior ] };
     key <AC03> { [ d, D, Next ] };
     
-    // home and end (like emacs)
-    key <AC01> { [ a, A, Home ] };
-    key <AD03> { [ e, E, End ] };
+    // home and end
+    key <AC04> { [ f, F, End ] };
+    key <AB05> { [ b, B, Home ] };
+    
+    // backspace and delete by [ and ]
+    key <AD11> { [ bracketleft,  braceleft,  BackSpace ] };
+    key <AD12> { [ bracketright, braceright, Delete ] };
     
     // insert
     key <AD08> { [ i, I, Insert ] };
@@ -86,9 +90,7 @@ xkb_symbols "hackus" {
     // contextual menu
     key <AB07> { [ m, M, Menu ] };
     
-    key <AB02> { [ x, X, Delete ] };
-    
-    replace key <TAB> { [ Tab, ISO_Left_Tab, Escape ] };
+    replace key <TLDE> { [ grave, asciitilde, Escape ] };
 };
 
 partial alphanumeric_keys
@@ -105,9 +107,13 @@ xkb_symbols "hackru" {
     key <AD07> { [ Cyrillic_ghe, Cyrillic_GHE, Prior ] };
     key <AC03> { [ Cyrillic_ve,  Cyrillic_VE,  Next ] };
     
-    // home and end (like emacs)
-    key <AC01> { [ Cyrillic_ef, Cyrillic_EF, Home ] };
-    key <AD03> { [ Cyrillic_u,  Cyrillic_U,  End ] };
+    // home and end
+    key <AC04> { [ Cyrillic_a, Cyrillic_A, End ] };
+    key <AB05> { [ Cyrillic_i, Cyrillic_I, Home ] };
+    
+    // backspace and delete by [ and ]
+    key <AD11> { [ Cyrillic_ha,       Cyrillic_HA,       BackSpace ] };
+    key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN, Delete ] };
     
     // insert
     key <AD08> { [ Cyrillic_sha, Cyrillic_SHA, Insert ] };
@@ -115,9 +121,7 @@ xkb_symbols "hackru" {
     // contextual menu
     key <AB07> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN, Menu ] };
     
-    key <AB02> { [ Cyrillic_che, Cyrillic_CHE, Delete ] };
-    
-    replace key <TAB> { [ Tab, ISO_Left_Tab, Escape ] };
+    replace key <TLDE> { [ Cyrillic_io, Cyrillic_IO, Escape ] };
 };
 
 // non lang-specific keys
