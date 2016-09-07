@@ -1,4 +1,5 @@
 
+// typewriter number keys
 default partial alphanumeric_keys
 xkb_symbols "us" {
     
@@ -21,6 +22,7 @@ xkb_symbols "us" {
     include "mine(hackus)"
 };
 
+// typewriter number keys
 partial alphanumeric_keys
 xkb_symbols "ru" {
     
@@ -124,8 +126,11 @@ xkb_symbols "hackru" {
 hidden partial alphanumeric_keys
 xkb_symbols "somestuff" {
     
-    replace key <CAPS> { [ Control_L, Control_L ] };
-    modifier_map Control { <CAPS>, <LCTL> };
+    replace key <CAPS> { [ Control_L ] };
+    replace key <RTRN> { [ Control_R ] };
+    modifier_map Control { <CAPS>, <LCTL>, <RTRN>, <RCTL> };
+    
+    replace key <INS> { [ Return ] };
     
     # switch layout by both shifts
     key <LFSH> { [ Shift_L, ISO_Prev_Group ] };
