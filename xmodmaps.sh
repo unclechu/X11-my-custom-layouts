@@ -1,5 +1,4 @@
 #!/bin/bash
 
-xmodmap -e 'keycode 78 = Caps_Lock' # Scroll-Lock
+# need to detect Caps Lock key number by xlib-keys-hack tool
 xmodmap -e 'keycode 169 = Caps_Lock' # Eject
-xmodmap -e 'keycode 180 = Caps_Lock' # Home-Page
