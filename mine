@@ -95,6 +95,9 @@ xkb_symbols "somestuff" {
     // apple keyboard key near left shift
     key <LSGT> { [ Shift_L, ISO_Prev_Group ] };
     
+    // for keyboard with only Left Super but with Menu key at right side
+    key <MENU> { [ Super_R ] };
+    
     // for hacking
     key <LVL3> {
         type[Group1]="ONE_LEVEL",
