@@ -17,7 +17,7 @@ Usage
   $ sudo ./copy-to-system.sh
   ```
 
-2. Apply these layouts (put this commands to your session autostart script):
+2. Apply these layouts (put these commands to your session autostart script):
 
   ```bash
   $ setxkbmap -layout 'mine(us),mine(ru)'
