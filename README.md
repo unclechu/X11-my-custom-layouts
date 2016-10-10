@@ -28,7 +28,7 @@ Usage
   directory of this cloned repo, especially if you add this command to your
   session autostart script.
 
-  Since this hacked layouts supposed to be used with the `xlib-keys-hack` you
+  Since these hacked layouts supposed to be used with the `xlib-keys-hack` you
   usually use these commands in your session autostart script:
 
   ```bash
@@ -42,7 +42,7 @@ Usage
   that contains `xlib-keys-hack` built binary file.
 
   Executing `xmodmaps.sh` here is very important, because we need mapped real
-  `Caps Lock` key to let `xlib-keys-hack` tool to detect this key number to
+  `Caps Lock` key to let `xlib-keys-hack` tool detect this key number to
   trigger real `Caps Lock` pressing.
 
 Author
@@ -53,5 +53,5 @@ Author
 License
 -------
 
-Public domain. You able to use it and distribute any way you could imagine
+Public domain. You able to use it and distribute any way you can imagine
 without any limitations.
