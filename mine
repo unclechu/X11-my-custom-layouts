@@ -1,68 +1,23 @@
 
-// typewriter number keys
-default partial alphanumeric_keys
+// main US layout
+partial alphanumeric_keys
 xkb_symbols "us" {
-    
-    include "us(basic)"
-    name[Group1]= "US - My custom";
-    
-    include "mine(somestuff)"
-    
-    key <AE01> { [ exclam,      1 ] };
-    key <AE02> { [ at,          2 ] };
-    key <AE03> { [ numbersign,  3 ] };
-    key <AE04> { [ dollar,      4 ] };
-    key <AE05> { [ percent,     5 ] };
-    key <AE06> { [ asciicircum, 6 ] };
-    key <AE07> { [ ampersand,   7 ] };
-    key <AE08> { [ asterisk,    8 ] };
-    key <AE09> { [ parenleft,   9 ] };
-    key <AE10> { [ parenright,  0 ] };
-    
-    include "mine(hackus)"
-};
-
-// typewriter number keys
-partial alphanumeric_keys
-xkb_symbols "ru" {
-    
-    include "ru(winkeys)"
-    name[Group1]= "RU - My custom";
-    
-    include "mine(somestuff)"
-    
-    key <AE01> { [ exclam,     1 ] };
-    key <AE02> { [ quotedbl,   2 ] };
-    key <AE03> { [ numerosign, 3 ] };
-    key <AE04> { [ semicolon,  4 ] };
-    key <AE05> { [ percent,    5 ] };
-    key <AE06> { [ colon,      6 ] };
-    key <AE07> { [ question,   7 ] };
-    key <AE08> { [ asterisk,   8 ] };
-    key <AE09> { [ parenleft,  9 ] };
-    key <AE10> { [ parenright, 0 ] };
-    
-    include "mine(hackru)"
-};
-
-// almost as original system layout
-partial alphanumeric_keys
-xkb_symbols "origus" {
     include "us(basic)"
     name[Group1]= "US - Original";
     include "mine(somestuff)"
     include "mine(hackus)"
 };
 
-// almost as original system layout
+// main RU layout
 partial alphanumeric_keys
-xkb_symbols "origru" {
+xkb_symbols "ru" {
     include "ru(winkeys)"
     name[Group1]= "RU - Original";
     include "mine(somestuff)"
     include "mine(hackru)"
 };
 
+// third-level shift hack for US layout
 partial alphanumeric_keys
 xkb_symbols "hackus" {
     
@@ -93,6 +48,7 @@ xkb_symbols "hackus" {
     key <AB07> { [ m, M, Menu ] };
 };
 
+// third-level shift hack for RU layout
 partial alphanumeric_keys
 xkb_symbols "hackru" {
     key.type[group1]="THREE_LEVEL";
