@@ -82,11 +82,14 @@ xkb_symbols "hackru" {
 hidden partial alphanumeric_keys
 xkb_symbols "somestuff" {
     
-    replace key <CAPS> { [ Control_L ] };
-    replace key <RTRN> { [ Control_R ] };
-    modifier_map Control { <CAPS>, <LCTL>, <RTRN>, <RCTL> };
+    replace key <CAPS> { [ Escape ] };
     
-    replace key <INS> { [ Return ] };
+    //  replace key <CAPS> { [ Control_L ] };
+    //  replace key <RTRN> { [ Control_R ] };
+    //  modifier_map Control { <CAPS>, <LCTL>, <RTRN>, <RCTL> };
+    //
+    //  // to give Enter key any keycode to simulate it later
+    //  replace key <INS> { [ Return ] };
     
     # switch layout by both shifts
     key <LFSH> { [ Shift_L, ISO_Prev_Group ] };
